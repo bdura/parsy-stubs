@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+
+# IDE
+.vscode
+.idea
+
+# Python
+__pycache__
+.venv
+
+# Hypothesis
+.hypothesis
+
+# Coverage
+.coverage
+coverage.xml
+
+# Notebooks
+*.ipynb
+.ipynb_checkpoints
+
+# Secrets
+.env
+
+# Data
+data/
+*.db
