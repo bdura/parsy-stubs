@@ -18,9 +18,8 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          path: |
-            dist/*.tar.gz
-            dist/*.whl
+          name: artifact
+          path: dist/
 
   pypi-publish:
     name: Upload release to PyPI
@@ -32,6 +31,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
+          name: artifact
           path: dist
 
       - run: ls dist
