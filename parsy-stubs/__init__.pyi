@@ -166,8 +166,9 @@ class Parser(Generic[Input, Output]):
 
 def alt(*parsers: Parser) -> Parser: ...
 def seq(
-    *parsers: Parser[Input, Output], **kw_parsers: Parser[Input, Output]
-) -> Parser[Input, tuple[Output, ...]]: ...
+    *parsers: Parser[Input, Any],
+    **kw_parsers: Parser[Input, Any],
+) -> Parser[Input, tuple]: ...
 
 P = TypeVar("P", bound=Parser)
 ParseGen = Generator[Parser[Input, Any] | Any, Any, T]
