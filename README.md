@@ -3,13 +3,14 @@
 [Parsy](https://github.com/python-parsy/parsy) is an extremely elegant
 monadic parser combinator library for LL(infinity) grammars.
 
-This library aims to enhance your developer experience (as well as catching a swathe of bugs before you run any test)
+This library aims to enhance your developer experience (as well as catching a
+swathe of bugs before you run any test using static type checking with tools like Mypy)
 by providing type-hinting.
 
 ## Installation
 
 ```shell
-pip install git+https://github.com/bdura/parsy-stubs
+pip install parsy-stubs
 ```
 
 ## Disclaimer
